@@ -1,0 +1,67 @@
+.simple-banner {
+	position: relative;
+	z-index: 1;
+	padding: 269px 60px;
+
+	@media screen and (max-width: 1440px){
+		padding: 18.68vw 60px;
+	}
+	@media screen and (max-width: 845px){
+		padding: 14vw 20px;
+	}
+
+	&__pic {
+		@include image-fit;
+		z-index: 1;
+		img {
+			@include image-fit;
+			z-index: 1;
+
+		}
+		&::after{
+			@include image-fit;
+			content: '';
+			z-index: 2;
+			background: linear-gradient(102.06deg, rgba(0, 0, 0, 0.6) 38%, rgba(0, 0, 0, 0.312868) 56.19%, rgba(0, 0, 0, 0) 70.86%);
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 2;
+		color: #FAFAFA;
+
+	}
+	&__title {
+		font-weight: 200;
+		font-size: 44px;
+		line-height: 53px;
+		text-transform: uppercase;
+
+		@media screen and (max-width: 845px){
+			font-size: 35px;
+			line-height: 1.2;
+		}
+		@media screen and (max-width: 420px){
+			font-size: 30px;
+		}
+	}
+
+	&__desc {
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 27px;
+		margin-top: 32px;
+		width: 640px;
+		max-width: 100%;
+		@media screen and (max-width: 420px){
+			font-size: 18px;
+			line-height: 1.2;
+		}
+	}
+
+	&__btns {
+		margin-top: 32px;
+		display: flex;
+	}
+}

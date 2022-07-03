@@ -1,0 +1,186 @@
+.site-footer {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	@media screen and (max-width: 540px) {
+		padding: 30px 0 20px;
+	}
+}
+
+.sf-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: -40px;
+
+	&__col {
+		width: calc(25% - 40px);
+		margin-left: 40px;
+
+		@media screen and (max-width: 900px) {
+
+			width: calc(50% - 40px);
+		}
+		@media screen and (max-width: 540px) {
+
+			width: calc(100% - 40px);
+			&:nth-child(3){
+				.sf-menu{
+					margin-top: 8px;
+				}
+			}
+		}
+	}
+}
+
+.sf-socials {
+	margin-top: 36px;
+	@media screen and (max-width: 540px) {
+		margin-top: 15px;
+		/*flex-direction: column;
+		align-items: center;
+		text-align: center;
+		.socials{
+			justify-content: center;
+		}*/
+	}
+
+
+	&__title {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+
+		&+* {
+			margin-top: 19px;
+		}
+	}
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	margin-left: -14px;
+
+	&__item {
+		width: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 14px;
+		transition-duration: .3s;
+
+		svg {
+			width: 24px;
+			height: auto;
+			display: block;
+
+			path {
+				transition-duration: .3s;
+			}
+		}
+
+
+		&:hover {
+			svg path {
+				fill: #FAB91E;
+			}
+		}
+	}
+
+}
+
+.sf-menu {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -8px;
+	margin-top: 35px;
+	@media screen and (max-width: 540px) {
+		margin-top: 15px;
+	}
+
+
+	&__item {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		display: inline-flex;
+		transition-duration: .3s;
+
+
+		&:hover {
+			color: #FAB91E;
+		}
+
+
+		margin-bottom: 8px;
+	}
+}
+
+.sf-logo {
+	max-width: 100%;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.sf-company-name {
+	margin-top: 12px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.sf-info {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+.sf-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	margin-top: 31px;
+	@media screen and (max-width: 540px) {
+		margin-top: 15px;
+	}
+
+}
+
+.sf-maker {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	transition-duration: .3s;
+
+	span {}
+
+	svg {
+		width: 15px;
+		height: auto;
+		margin-left: 9px;
+		margin-bottom: 3px;
+
+		path {
+			transition-duration: .3s;
+		}
+	}
+
+	&:hover {
+		color: #FAB91E;
+		svg path {
+			fill: #FAB91E;
+		}
+	}
+
+}
+
+.sf-year {
+	margin-top: 4px;
+}
