@@ -203,8 +203,19 @@
 	width: 32px;
 	height: 32px;
 	cursor: pointer;
-	transition-duration: .2s;
+	transition-duration: .3s;
 
+	&:hover{
+		opacity: .7;
+	}
+
+	svg{
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-top: -1px;
+	}
+	/*
 	span,
 	span::before,
 	span::after {
@@ -230,7 +241,7 @@
 
 	span::after {
 		transform: translateY(8px);
-	}
+	}*/
 }
 
 .js-toggle-menu {
@@ -257,7 +268,7 @@
 	max-width: 100%;
 	height: 100%;
 	margin-right: -450px;
-	padding: 54px 50px 50px;
+	padding: 54px 50px 20px;
 	transition-duration: .6s;
 	text-align: right;
 	color: #FAFAFA;
