@@ -30,8 +30,8 @@ block main
 					.catalog-filter
 						.catalog-filter__control.js-sort-control
 							//'unset' || 'asc' || 'desc'
-							.catalog-filter__direction(data-status="unset")
-							.catalog-filter__name Фильтр
+							.catalog-filter__direction.js-catalog-filter__direction(data-status="unset" data-index="-1")
+							.catalog-filter__name.js-catalog-filter__name Фильтр
 							.catalog-filter__icon
 								include ../images/filter-icon.svg
 
