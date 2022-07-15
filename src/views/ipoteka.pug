@@ -1,0 +1,19 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Главная
+			.breadcrumbs__delimiter
+			.breadcrumbs__item Ипотека
+	section.section-full-page-image
+		.container
+			.full-page-image
+				img(src="images/ipoteka.jpg", alt="")

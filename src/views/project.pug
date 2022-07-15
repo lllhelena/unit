@@ -1,0 +1,236 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Главная
+			.breadcrumbs__delimiter
+			.breadcrumbs__item Туломи МБ-17
+	section.project-top-section
+		.container
+			.project-top
+				.project-top__left
+					.project-slider.js-project-slider#project-slider-1
+						a.project-slider__item.js-project-slider-fancy-item(href="images/proj-slider-pic.jpg" )
+							img(src="images/proj-slider-pic.jpg", alt="")
+						a.project-slider__item.js-project-slider-fancy-item(href="images/srv2.jpg" )
+							img(src="images/srv2.jpg", alt="")
+						a.project-slider__item.js-project-slider-fancy-item(href="images/srv3.jpg" )
+							img(src="images/srv3.jpg", alt="")
+						a.project-slider__item.js-project-slider-fancy-item(href="images/srv2.jpg" )
+							img(src="images/srv1.jpg", alt="")
+
+				.project-top__right
+					.project-top-info
+						h1.project-top-info__title Коппи
+						.project-top-info__price 1.018.600₽
+						.project-top-info__size 4,5х3,0м
+						.project-params
+							.project-params-item
+								.project-params-item__icon
+									img(src="images/product-card-icon-bed.svg", alt="")
+								.project-params-item__name Спальных мест:
+									span.project-params-item__val  2
+							.project-params-item
+								.project-params-item__icon
+									img(src="images/product-card-icon-toilet.svg", alt="")
+								.project-params-item__name Санузлов:
+									span.project-params-item__val  1
+							.project-params-item
+								.project-params-item__icon
+									img(src="images/product-card-icon-home.svg", alt="")
+								.project-params-item__name Терасса:
+									span.project-params-item__val  Крытая
+							.project-params-item
+								.project-params-item__icon
+									img(src="images/product-card-icon-steps.svg", alt="")
+								.project-params-item__name Этажей:
+									span.project-params-item__val  1
+						.project-top-info__btns
+							a.btn.project-top-info__btn(href="") Записаться на консультацию
+							a.btn.project-top-info__btn(href="") Расчёт
+
+
+	section.schemes-section
+		.container
+			.schemes-flex
+				.schemes-col
+					.schemes-col__title План бани
+					.schemes-col__row
+						.schemes-control.js-schemes-control(data-index-of-full="0")
+							img(src="images/scheme_1.jpg", alt="")
+						.schemes-control.js-schemes-control(data-index-of-full="1")
+							img(src="images/scheme_2.jpg", alt="")
+				.schemes-col
+					.schemes-col__title Фасады
+					.schemes-col__row
+						.schemes-control.js-schemes-control(data-index-of-full="2")
+							img(src="images/scheme_3.jpg", alt="")
+						.schemes-control.js-schemes-control(data-index-of-full="3")
+							img(src="images/scheme_4.jpg", alt="")
+
+			.schemes-full-block(style="display:none;")
+				.schemes-full-block__inner
+					.schemes-full-item
+						img(src="images/scheme_1.jpg", alt="")
+					.schemes-full-item
+						img(src="images/scheme_2.jpg", alt="")
+					.schemes-full-item
+						img(src="images/scheme_3.jpg", alt="")
+					.schemes-full-item
+						img(src="images/scheme_4.jpg", alt="")
+
+
+
+	section.accordions-section
+		.container
+			.accordions-section__title В стоимость входит
+			.accordions-section__content
+				.accordion-control.js-accordion-control
+					.accordion-control__name Основные материалы
+					.accordion-control__close
+				.accordion-content
+					.accordion-content__inner
+						.accordion-text
+							ul
+								li Коробка дома из обработанной древесины с двухконтурным утеплением Knauf
+								li Пароизолиции и мембраны всех перекрытий и стен, вентилируемый зазор в стенах
+							p Внешняя отделка:
+							ul
+								li Кровля металлочерепица с полимерным покрытием (цвет на выбор). Дно зашито металлом.
+								li Водосточная система Docke Премиум
+								li Окна КВЕ пятикамерный профиль, стеклопакет со шпросами, с фурнитурой и москитными сетками
+								li Дверь входная металлическая с терморазрывом (для коттеджей) с тройным уплотнителем и двойным антивандальным замком.
+								li Фасад имитация бруса сосна с пропиткой Dufa (колеровка на выбор) на 2 слоя. Покраска проемов и периметра кровли террасы акриловой краской (цвет на выбор)
+								li Терраса крытая с подшивкой, основание террасная доска с обработкой террасным маслом.
+
+				.accordion-control.js-accordion-control
+					.accordion-control__name Инженерия
+					.accordion-control__close
+				.accordion-content
+					.accordion-content__inner
+						.accordion-text
+							ul
+								li Электроинженерия скрытая в гофротрубе, точки подключения (розетки, выключатели), щит в сборе
+								li Водоснабжение скрытое Rehau, водоотведение пвх (подготовленные для подключения с наружными сетями и монтажа обогревочного кабеля)
+								li Вентиляция приточно-вытяжная автоматическая в санузле, и выход для подключения вытяжки в кухне
+								li Отопление: конвектора настенные и плинтусные, теплые пол в санузле
+								li Освещение: внутреннее потолочное, бра настенные, подсветка в душе; наружное – светильники фасадные по периметру.
+
+
+				.accordion-control.js-accordion-control
+					.accordion-control__name Внутренняя отделка
+					.accordion-control__close
+				.accordion-content
+					.accordion-content__inner
+						.accordion-text
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+
+				.accordion-control.js-accordion-control
+					.accordion-control__name Наполнение
+					.accordion-control__close
+				.accordion-content
+					.accordion-content__inner
+						.accordion-text
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+
+
+	section.accordions-section
+		.container
+			.accordions-section__title В стоимость <span class="yellow">Не входит</span>
+			.accordions-section__content
+				.accordion-control.js-accordion-control
+					.accordion-control__name Доставка и монтаж
+					.accordion-control__close
+				.accordion-content
+					.accordion-content__inner
+						.accordion-text
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+
+				.accordion-control.js-accordion-control
+					.accordion-control__name Фундамент
+					.accordion-control__close
+				.accordion-content
+					.accordion-content__inner
+						.accordion-text
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+
+				.accordion-control.js-accordion-control
+					.accordion-control__name Дополнительные опции
+					.accordion-control__close
+				.accordion-content
+					.accordion-content__inner
+						.accordion-text
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quas! Sit at distinctio laborum.
+
+	section.additional-options-section
+		.container
+			h2.project-page-h2 Дополнительные опции
+			.additional-options
+				.additional-options-item
+					.additional-options-item__pic
+						img(src="images/proj-slider-pic.jpg", alt="")
+					.additional-options-item__inner
+						.additional-options-item__name Увеличение террасы
+						.additional-options-item__info 10 000 Р за м²
+				.additional-options-item
+					.additional-options-item__pic
+						img(src="images/proj-slider-pic.jpg", alt="")
+					.additional-options-item__inner
+						.additional-options-item__name Увеличение террасы
+						.additional-options-item__info 10 000 Р за м²
+				.additional-options-item
+					.additional-options-item__pic
+						img(src="images/proj-slider-pic.jpg", alt="")
+					.additional-options-item__inner
+						.additional-options-item__name Увеличение террасы
+						.additional-options-item__info 10 000 Р за м²
+
+
+	section.photo-materials-section
+		.container
+			h2.project-page-h2 Фото Материалы
+			.photo-materials
+				a.photo-materials-item(href="images/proj-slider-pic.jpg" data-fancybox="photo-materials")
+					img(src="images/proj-slider-pic.jpg", alt="")
+				a.photo-materials-item(href="images/proj-slider-pic.jpg" data-fancybox="photo-materials")
+					img(src="images/proj-slider-pic.jpg", alt="")
+				a.photo-materials-item(href="images/proj-slider-pic.jpg" data-fancybox="photo-materials")
+					img(src="images/proj-slider-pic.jpg", alt="")
+
+	section.video-review
+		.container
+			h2.project-page-h2 Видео обзор проекта
+			.video
+				//data-type="mp4" или data-type="youtube"
+				//youtube ссылка только в формате https://www.youtube.com/embed/LXb3EKWsInQ
+				.video__inner(data-type="youtube", data-src="https://www.youtube.com/embed/LXb3EKWsInQ")
+				.video__preview
+					img(src="images/proj-slider-pic.jpg", alt="")
+				.video__play-btn.js-video-play-btn
+
+	//section.video-review
+		.container
+			h2.project-page-h2 Тест видео mp4 на сервере
+			.video
+				.video__inner(data-type="mp4", data-src="images/video.mp4")
+				.video__preview
+					img(src="images/proj-slider-pic.jpg", alt="")
+				.video__play-btn.js-video-play-btn
