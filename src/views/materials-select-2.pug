@@ -1,0 +1,182 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container.container--breadcrumbs
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Главная
+			.breadcrumbs__delimiter
+			a.breadcrumbs__item(href="/")  Выбор материалов/Расцветок
+			.breadcrumbs__delimiter
+			.breadcrumbs__item Вариант дома 3
+
+	.container.container--link-back
+		.link-back.js-matselect-btn--prev-step
+			span Назад
+
+	.material-selections-steps
+		.material-selections-step.material-selections-step--active
+			section.img-map-section.img-map-section--matselect
+				.container
+					.img-map.img-map--matselect
+						.img-map__inner.js-img-map__inner
+							img.img-map__pic.img-map__pic(src='images/select-mat-2-top.jpg')
+							.img-map__toner
+							.img-map__points
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 36.6%; top: 26.4%;", data-idx="0" data-target="#matselect-tabs-1")
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 20.4%; top: 50.3%;", data-idx="1" data-target="#matselect-tabs-1")
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 54.6%; top: 52%;", data-idx="2" data-target="#matselect-tabs-1")
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 31.8%; top: 87.3%;", data-idx="3" data-target="#matselect-tabs-1")
+
+			section.matselect-tabs-section
+				.container
+					.matselect-tabs-section-inner
+						.matselect-tabs-title Материал
+						.matselect-tabs-controls
+							.matselect-tabs-control.js-matselect-tabs-control.matselect-tabs-control--active(data-idx="0" data-target="#matselect-tabs-1") Крыши
+							.matselect-tabs-control.js-matselect-tabs-control(data-idx="1" data-target="#matselect-tabs-1") Фасады
+							.matselect-tabs-control.js-matselect-tabs-control(data-idx="2" data-target="#matselect-tabs-1") Окна
+							.matselect-tabs-control.js-matselect-tabs-control(data-idx="3" data-target="#matselect-tabs-1") Двери
+
+						.matselect-tabs#matselect-tabs-1
+							.matselect-tabs__tab.matselect-tabs__tab--active
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="roof-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название материала
+														.matselect-scroller-item__info Цвет материала
+
+
+							.matselect-tabs__tab
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="fasade-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название 2 материала
+														.matselect-scroller-item__info Цвет материала
+
+
+							.matselect-tabs__tab
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="windows-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название 3 материала
+														.matselect-scroller-item__info Цвет материала
+
+
+							.matselect-tabs__tab
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="doors-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название 4 материала
+														.matselect-scroller-item__info Цвет материала
+
+					.matselect-btns-flex
+						button.btn.btn--black-border.matselect-btn.js-matselect-btn--next-step Продолжить
+
+
+		.material-selections-step
+			section.img-map-section.img-map-section--matselect
+				.container
+					.img-map.img-map--matselect
+						.img-map__inner.js-img-map__inner
+							img.img-map__pic.img-map__pic(src='images/select-mat-2-top--step-2.jpg')
+							//если тонировка не нужна - просто не добавляйте блок .img-map__toner
+							//.img-map__toner
+							.img-map__points
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 6.7%; top: 23.3%;", data-idx="0" data-target="#matselect-tabs-2")
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 58.2%; top: 55.1%;", data-idx="1" data-target="#matselect-tabs-2")
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 24.8%; top: 61%;", data-idx="2" data-target="#matselect-tabs-2")
+								.img-map-point-plus.js-matselect-tabs-control(style="left: 46.4%; top: 47.3%;", data-idx="3" data-target="#matselect-tabs-2")
+
+			section.matselect-tabs-section
+				.container
+					.matselect-tabs-section-inner
+						.matselect-tabs-title Материал
+						.matselect-tabs-controls
+							.matselect-tabs-control.js-matselect-tabs-control.matselect-tabs-control--active(data-idx="0" data-target="#matselect-tabs-2") Санузел
+							.matselect-tabs-control.js-matselect-tabs-control(data-idx="1" data-target="#matselect-tabs-2") Печь
+							.matselect-tabs-control.js-matselect-tabs-control(data-idx="2" data-target="#matselect-tabs-2") Столы
+							.matselect-tabs-control.js-matselect-tabs-control(data-idx="3" data-target="#matselect-tabs-2") Двери
+
+						.matselect-tabs#matselect-tabs-2
+							.matselect-tabs__tab.matselect-tabs__tab--active
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="roof-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название материала
+														.matselect-scroller-item__info Цвет материала
+
+
+							.matselect-tabs__tab
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="fasade-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название материала
+														.matselect-scroller-item__info Цвет материала
+
+
+							.matselect-tabs__tab
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="windows-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название материала
+														.matselect-scroller-item__info Цвет материала
+
+
+							.matselect-tabs__tab
+								.matselect-scroller.js-matselect-scroller
+									.matselect-scroller__inner
+										each val in [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7]
+												label.matselect-scroller-item
+													input(type="radio", name="doors-material")
+													.matselect-scroller-item__inner
+														.matselect-scroller-item__pic
+															img(src="images/material-item.jpg", alt="")
+														.matselect-scroller-item__name Название материала
+														.matselect-scroller-item__info Цвет материала
+
+
+					.matselect-btns-flex
+						button.btn.btn--black-border.matselect-btn.js-open-modal(data-src="#modal-save-variant") Сохранить вариант
+

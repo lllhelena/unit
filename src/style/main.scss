@@ -1,7 +1,10 @@
-@import "partials/reset.css";
-@import "partials/fonts.css";
-@import "partials/jquery.fancybox.min.css";
-@import "partials/slick.css";
+@import "partials/libs/reset.css";
+@import "partials/libs/fonts.css";
+@import "partials/libs/jquery.fancybox.min.css";
+@import "partials/libs/slick.css";
+@import "partials/libs/simplebar.css";
+@import "partials/libs/select2.css";
+@import "partials/libs/flatpickr.min.css";
 
 /* my style */
 
@@ -18,3 +21,12 @@
 @import "partials/catalog.scss";
 @import "partials/service.scss";
 @import "partials/project.scss";
+@import "partials/tech.scss";
+@import "partials/materials-select.scss";
+@import "partials/fundament-and-delivery.scss";
+@import "partials/materials.scss";
+@import "partials/modals.scss";
+
+
+@import "partials/other.scss";
+

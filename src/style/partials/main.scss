@@ -52,7 +52,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	color: #282826;
+	color: #373735;
 	background: #F2F2F2;
 	font-family: $mainFont;
 	font-size: 16px;
@@ -84,6 +84,14 @@ body {
 @media screen and (max-width: 550px) {
 	.container {
 		max-width: calc(100% - 15px * 2);
+	}
+}
+
+.container--1440 {
+	width: 1440px;
+
+	@media screen and (max-width: 1440px) {
+		max-width: 100%;
 	}
 }
 
@@ -144,6 +152,26 @@ html {
 
 		&:hover {
 			color: #373735;
+			background: #FAB91E;
+		}
+	}
+	&--full-orange {
+		color: #ffffff;
+		background: #FAB91E;
+
+		&:hover {
+			color: #ffffff;
+			background: #FAB91E;
+			opacity: .7;
+		}
+	}
+
+	&--black-border {
+		border-color: #373735;
+
+		&:hover {
+			color: #373735;
+			border-color: #FAB91E;
 			background: #FAB91E;
 		}
 	}

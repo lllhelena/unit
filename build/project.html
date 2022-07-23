@@ -76,7 +76,7 @@
       </div>
     </div>
     <main class="main">
-      <div class="container">
+      <div class="container container--breadcrumbs">
         <div class="breadcrumbs"><a class="breadcrumbs__item" href="/"> Главная</a>
           <div class="breadcrumbs__delimiter"></div>
           <div class="breadcrumbs__item">Туломи МБ-17</div>
@@ -111,7 +111,10 @@
                     <div class="project-params-item__name">Этажей:<span class="project-params-item__val"> 1</span></div>
                   </div>
                 </div>
-                <div class="project-top-info__btns"><a class="btn project-top-info__btn" href="">Записаться на консультацию</a><a class="btn project-top-info__btn" href="">Расчёт</a></div>
+                <div class="project-top-info__btns">
+                  <div class="btn project-top-info__btn js-open-modal" data-src="#modal-submit-application">Записаться на консультацию</div>
+                  <div class="btn project-top-info__btn js-open-modal" data-src="#modal-calc">Расчёт</div>
+                </div>
               </div>
             </div>
           </div>

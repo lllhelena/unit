@@ -19,24 +19,24 @@ block main
 					h1.simple-banner__title Готовые модульные бани
 					.simple-banner__desc С доставкой и установкой в Хабаровске или любом другом городе Дальнего Востока
 					.simple-banner__btns
-						a.btn.btn--orange.btn--hov-white-text(href="")  Записаться на консультацию
+						.btn.btn--orange.btn--hov-white-text.js-open-modal(data-src="#modal-submit-application")   Записаться на консультацию
 
 	section.section-catalog.oh
 		.container
-			.catalog-top
+			.catalog-top.catalog-top--with-title
 				.catalog-top__left
 					h2.home-catalog-title Каталог
 				.catalog-top__right
-					.catalog-filter
-						.catalog-filter__control.js-sort-control
+					.catalog-sort
+						.catalog-sort__control.js-sort-control
 							//'unset' || 'asc' || 'desc'
-							.catalog-filter__direction.js-catalog-filter__direction(data-status="unset" data-index="-1")
-							.catalog-filter__name.js-catalog-filter__name Фильтр
-							.catalog-filter__icon
+							.catalog-sort__direction.js-catalog-sort__direction(data-status="unset" data-index="-1")
+							.catalog-sort__name.js-catalog-sort__name Фильтр
+							.catalog-sort__icon
 								include ../images/filter-icon.svg
 
-						.catalog-filter__content
-							.catalog-filter__title Сортировать по
+						.catalog-sort__content
+							.catalog-sort__title Сортировать по
 							.sort-item.js-sort-item
 								input.sort-item__inp-type(type="radio" name="sort-type" value="price")
 								input.sort-item__inp-direction(type="checkbox" name="sort-asc-price" checked)

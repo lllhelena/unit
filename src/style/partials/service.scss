@@ -1,3 +1,14 @@
+
+.container--breadcrumbs+*{
+	margin-top: 32px;
+}
+.container--breadcrumbs+.video-review{
+	margin-top: 32px;
+}
+.container--breadcrumbs+.section-catalog{
+	margin-top: 17px;
+}
+
 .breadcrumbs {
 	display: flex;
 	align-items: center;
@@ -28,6 +39,7 @@
 		margin-left: 10px;
 		background: url(../images/breadcrumbs-arrow.svg) no-repeat center center;
 	}
+
 }
 
 a.breadcrumbs__item {

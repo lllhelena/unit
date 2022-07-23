@@ -1,0 +1,88 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container.container--breadcrumbs
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Главная
+			.breadcrumbs__delimiter
+			.breadcrumbs__item Выбор материалов/Расцветок
+
+
+	.container
+		.catalog-cards
+			a.catalog-card(href="")
+				.catalog-card__pic
+					img(src="images/card_bg.jpg", alt="")
+				.catalog-card__inner
+					.catalog-card__name Вариант дома 1
+					.catalog-card__price Дом с треугольной крышей
+					.catalog-card__feature Площадь 32 - 97 м²
+					.catalog-card-attributes
+						.catalog-card-attributes__col
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-bed.svg", alt="")
+								.catalog-card-attribute__name 2
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-toilet.svg", alt="")
+								.catalog-card-attribute__name 1
+						.catalog-card-attributes__col
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-home.svg", alt="")
+								.catalog-card-attribute__name Крытая
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-steps.svg", alt="")
+								.catalog-card-attribute__name 1
+
+					.catalog-card__fg
+
+					.catalog-card__text-feature Этажей 2
+					.catalog-card__text-feature Спален 1
+
+					.catalog-card__btns
+						.btn.btn--orange Далее
+
+			a.catalog-card(href="")
+				.catalog-card__pic
+					img(src="images/card_bg.jpg", alt="")
+				.catalog-card__inner
+					.catalog-card__name Вариант дома 2
+					.catalog-card__price Дом с прямой крышей
+					.catalog-card__feature Площадь 32 - 97 м²
+					.catalog-card-attributes
+						.catalog-card-attributes__col
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-bed.svg", alt="")
+								.catalog-card-attribute__name 2
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-toilet.svg", alt="")
+								.catalog-card-attribute__name 1
+						.catalog-card-attributes__col
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-home.svg", alt="")
+								.catalog-card-attribute__name Крытая
+							.catalog-card-attribute
+								.catalog-card-attribute__icon
+									img(src="images/product-card-icon-steps.svg", alt="")
+								.catalog-card-attribute__name 1
+
+					.catalog-card__fg
+
+					.catalog-card__text-feature Этажей 2
+					.catalog-card__text-feature Спален 1
+
+					.catalog-card__btns
+						.btn.btn--orange Далее

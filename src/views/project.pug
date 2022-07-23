@@ -8,7 +8,7 @@ block vars
 
 
 block main
-	.container
+	.container.container--breadcrumbs
 		.breadcrumbs
 			a.breadcrumbs__item(href="/")  Главная
 			.breadcrumbs__delimiter
@@ -54,8 +54,8 @@ block main
 								.project-params-item__name Этажей:
 									span.project-params-item__val  1
 						.project-top-info__btns
-							a.btn.project-top-info__btn(href="") Записаться на консультацию
-							a.btn.project-top-info__btn(href="") Расчёт
+							.btn.project-top-info__btn.js-open-modal(data-src="#modal-submit-application") Записаться на консультацию
+							.btn.project-top-info__btn.js-open-modal(data-src="#modal-calc") Расчёт
 
 
 	section.schemes-section
