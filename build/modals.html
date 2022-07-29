@@ -76,272 +76,29 @@
       </div>
     </div>
     <main class="main">
-      <section class="section-simple-banner oh">
-        <div class="container">
-          <div class="simple-banner">
-            <div class="simple-banner__pic"><img src="images/home-banner.jpg" alt=""></div>
-            <div class="simple-banner__text">
-              <h1 class="simple-banner__title">Готовые модульные бани</h1>
-              <div class="simple-banner__desc">С доставкой и установкой в Хабаровске или любом другом городе Дальнего Востока</div>
-              <div class="simple-banner__btns">
-                <div class="btn btn--orange btn--hov-white-text js-open-modal" data-src="#modal-submit-application">  Записаться на консультацию</div>
-              </div>
-            </div>
-          </div>
+      <div class="container container--breadcrumbs">
+        <div class="breadcrumbs"><a class="breadcrumbs__item" href="/"> Модалки</a></div>
+      </div>
+      <div class="container">
+        <div>
+          <div class="btn js-open-modal" style="margin-top: 20px;" data-src="#modal-submit-application">Записаться на консультацию</div>
         </div>
-      </section>
-      <section class="section-catalog oh">
-        <div class="container">
-          <div class="catalog-top catalog-top--with-title">
-            <div class="catalog-top__left">
-              <h2 class="home-catalog-title">Каталог</h2>
-            </div>
-            <div class="catalog-top__right">
-              <div class="catalog-sort">
-                <div class="catalog-sort__control js-sort-control">
-                  <!--'unset' || 'asc' || 'desc'-->
-                  <div class="catalog-sort__direction js-catalog-sort__direction" data-status="unset" data-index="-1"></div>
-                  <div class="catalog-sort__name js-catalog-sort__name">Фильтр</div>
-                  <div class="catalog-sort__icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 17.8853V17.6782L12.3536 17.5318L5.13089 10.3091C4.73125 9.90948 4.5 9.3513 4.5 8.78667V5.33333C4.5 4.87214 4.87214 4.5 5.33333 4.5H26.6667C27.1279 4.5 27.5 4.87214 27.5 5.33333V8.78667C27.5 9.3513 27.2687 9.90948 26.8691 10.3091L19.6464 17.5318L19.5 17.6782V17.8853V25.3333C19.5 25.649 19.3219 25.9376 19.0385 26.0797L13.707 28.7455C13.7068 28.7456 13.7066 28.7457 13.7064 28.7458C13.5884 28.8043 13.4608 28.8333 13.3333 28.8333C13.1806 28.8333 13.0295 28.7917 12.8969 28.7098C12.6494 28.5562 12.5 28.2883 12.5 28V17.8853ZM18.0766 16.7452L18.0776 16.7442L25.6909 9.13089L25.8376 8.98418L25.8373 8.7767L25.8347 6.66603L25.834 6.16667H25.3347H6.66667H6.16667V6.66667V8.78667V8.99388L6.31324 9.14034L13.9226 16.7443L13.9234 16.7452C14.079 16.8999 14.1667 17.1107 14.1667 17.3333V25.8427V26.6517L14.8903 26.2899L17.5569 24.9565L17.8333 24.8184V24.5093V17.3333C17.8333 17.1107 17.921 16.8999 18.0766 16.7452Z" fill="#373735" stroke="#F2F2F2"/></svg></div>
-                </div>
-                <div class="catalog-sort__content">
-                  <div class="catalog-sort__title">Сортировать по</div>
-                  <div class="sort-item js-sort-item">
-                    <input class="sort-item__inp-type" type="radio" name="sort-type" value="price">
-                    <input class="sort-item__inp-direction" type="checkbox" name="sort-asc-price" checked>
-                    <div class="sort-item__direction"></div>
-                    <div class="sort-item__name">Цена</div>
-                  </div>
-                  <div class="sort-item js-sort-item">
-                    <input class="sort-item__inp-type" type="radio" name="sort-type" value="area">
-                    <input class="sort-item__inp-direction" type="checkbox" name="sort-asc-area" checked>
-                    <div class="sort-item__direction"></div>
-                    <div class="sort-item__name">Площадь</div>
-                  </div>
-                  <div class="sort-item js-sort-item">
-                    <input class="sort-item__inp-type" type="radio" name="sort-type" value="number">
-                    <input class="sort-item__inp-direction" type="checkbox" name="sort-asc-number" checked>
-                    <div class="sort-item__direction"></div>
-                    <div class="sort-item__name">Номер</div>
-                  </div>
-                  <div class="sort-item js-sort-item">
-                    <input class="sort-item__inp-type" type="radio" name="sort-type" value="popular">
-                    <input class="sort-item__inp-direction" type="checkbox" name="sort-asc-popular" checked>
-                    <div class="sort-item__direction"></div>
-                    <div class="sort-item__name">Популярное</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-cards"><a class="catalog-card" href="">
-              <div class="catalog-card__pic"><img src="images/card_bg.jpg" alt=""></div>
-              <div class="catalog-card__inner">
-                <div class="catalog-card__name">Название дома</div>
-                <div class="catalog-card__price">1.018.600₽</div>
-                <div class="catalog-card__feature">Площадь 32 - 97 м²</div>
-                <div class="catalog-card-attributes">
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-bed.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">2</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-toilet.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-home.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">Крытая</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-steps.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog-card__fg"></div>
-                <div class="catalog-card__text-feature">Этажей 2</div>
-                <div class="catalog-card__text-feature">Спален 1</div>
-                <div class="catalog-card__btns">
-                  <div class="btn btn--orange">Подробнее</div>
-                </div>
-              </div></a><a class="catalog-card" href="">
-              <div class="catalog-card__pic"><img src="images/card_bg.jpg" alt=""></div>
-              <div class="catalog-card__inner">
-                <div class="catalog-card__name">Название дома</div>
-                <div class="catalog-card__price">1.018.600₽</div>
-                <div class="catalog-card__feature">Площадь 32 - 97 м²</div>
-                <div class="catalog-card-attributes">
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-bed.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">2</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-toilet.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-home.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">Крытая</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-steps.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog-card__fg"></div>
-                <div class="catalog-card__text-feature">Этажей 2</div>
-                <div class="catalog-card__text-feature">Спален 1</div>
-                <div class="catalog-card__btns">
-                  <div class="btn btn--orange">Подробнее</div>
-                </div>
-              </div></a><a class="catalog-card" href="">
-              <div class="catalog-card__pic"><img src="images/card_bg.jpg" alt=""></div>
-              <div class="catalog-card__inner">
-                <div class="catalog-card__name">Название дома</div>
-                <div class="catalog-card__price">1.018.600₽</div>
-                <div class="catalog-card__feature">Площадь 32 - 97 м²</div>
-                <div class="catalog-card-attributes">
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-bed.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">2</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-toilet.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-home.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">Крытая</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-steps.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog-card__fg"></div>
-                <div class="catalog-card__text-feature">Этажей 2</div>
-                <div class="catalog-card__text-feature">Спален 1</div>
-                <div class="catalog-card__btns">
-                  <div class="btn btn--orange">Подробнее</div>
-                </div>
-              </div></a><a class="catalog-card" href="">
-              <div class="catalog-card__pic"><img src="images/card_bg.jpg" alt=""></div>
-              <div class="catalog-card__inner">
-                <div class="catalog-card__name">Название дома</div>
-                <div class="catalog-card__price">1.018.600₽</div>
-                <div class="catalog-card__feature">Площадь 32 - 97 м²</div>
-                <div class="catalog-card-attributes">
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-bed.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">2</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-toilet.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-home.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">Крытая</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-steps.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog-card__fg"></div>
-                <div class="catalog-card__text-feature">Этажей 2</div>
-                <div class="catalog-card__text-feature">Спален 1</div>
-                <div class="catalog-card__btns">
-                  <div class="btn btn--orange">Подробнее</div>
-                </div>
-              </div></a><a class="catalog-card" href="">
-              <div class="catalog-card__pic"><img src="images/card_bg.jpg" alt=""></div>
-              <div class="catalog-card__inner">
-                <div class="catalog-card__name">Название дома</div>
-                <div class="catalog-card__price">1.018.600₽</div>
-                <div class="catalog-card__feature">Площадь 32 - 97 м²</div>
-                <div class="catalog-card-attributes">
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-bed.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">2</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-toilet.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-home.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">Крытая</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-steps.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog-card__fg"></div>
-                <div class="catalog-card__text-feature">Этажей 2</div>
-                <div class="catalog-card__text-feature">Спален 1</div>
-                <div class="catalog-card__btns">
-                  <div class="btn btn--orange">Подробнее</div>
-                </div>
-              </div></a><a class="catalog-card" href="">
-              <div class="catalog-card__pic"><img src="images/card_bg.jpg" alt=""></div>
-              <div class="catalog-card__inner">
-                <div class="catalog-card__name">Название дома</div>
-                <div class="catalog-card__price">1.018.600₽</div>
-                <div class="catalog-card__feature">Площадь 32 - 97 м²</div>
-                <div class="catalog-card-attributes">
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-bed.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">2</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-toilet.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                  <div class="catalog-card-attributes__col">
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-home.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">Крытая</div>
-                    </div>
-                    <div class="catalog-card-attribute">
-                      <div class="catalog-card-attribute__icon"><img src="images/product-card-icon-steps.svg" alt=""></div>
-                      <div class="catalog-card-attribute__name">1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog-card__fg"></div>
-                <div class="catalog-card__text-feature">Этажей 2</div>
-                <div class="catalog-card__text-feature">Спален 1</div>
-                <div class="catalog-card__btns">
-                  <div class="btn btn--orange">Подробнее</div>
-                </div>
-              </div></a>
-          </div>
+        <div>
+          <div class="btn js-open-modal" style="margin-top: 20px;" data-src="#modal-calc">Расчёт по проекту</div>
         </div>
-      </section>
+        <div>
+          <div class="btn js-open-modal" style="margin-top: 20px;" data-src="#modal-select-send-mode">Выберите куда вам удобнее отправить</div>
+        </div>
+        <div>
+          <div class="btn js-open-modal" style="margin-top: 20px;" data-src="#modal-send-mode-phone">Введите номер телефона</div>
+        </div>
+        <div>
+          <div class="btn js-open-modal" style="margin-top: 20px;" data-src="#modal-send-mode-email">Введите email</div>
+        </div>
+        <div>
+          <div class="btn js-open-modal" style="margin-top: 20px;" data-src="#modal-save-variant">Сохранить вариант</div>
+        </div>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="container">

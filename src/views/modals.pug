@@ -1,0 +1,27 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container.container--breadcrumbs
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Модалки
+
+	.container
+		div
+			.btn.js-open-modal(style="margin-top: 20px;", data-src="#modal-submit-application") Записаться на консультацию
+		div
+			.btn.js-open-modal(style="margin-top: 20px;", data-src="#modal-calc") Расчёт по проекту
+		div
+			.btn.js-open-modal(style="margin-top: 20px;", data-src="#modal-select-send-mode") Выберите куда вам удобнее отправить
+		div
+			.btn.js-open-modal(style="margin-top: 20px;", data-src="#modal-send-mode-phone") Введите номер телефона
+		div
+			.btn.js-open-modal(style="margin-top: 20px;", data-src="#modal-send-mode-email") Введите email
+		div
+			.btn.js-open-modal(style="margin-top: 20px;", data-src="#modal-save-variant") Сохранить вариант

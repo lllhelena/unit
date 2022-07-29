@@ -76,25 +76,72 @@
       </div>
     </div>
     <main class="main">
-      <section class="section-simple-banner oh">
-        <div class="container">
-          <div class="simple-banner">
-            <div class="simple-banner__pic"><img src="images/home-banner.jpg" alt=""></div>
-            <div class="simple-banner__text">
-              <h1 class="simple-banner__title">Готовые модульные бани</h1>
-              <div class="simple-banner__desc">С доставкой и установкой в Хабаровске или любом другом городе Дальнего Востока</div>
-              <div class="simple-banner__btns">
-                <div class="btn btn--orange btn--hov-white-text js-open-modal" data-src="#modal-submit-application">  Записаться на консультацию</div>
-              </div>
-            </div>
-          </div>
+      <div class="container container--breadcrumbs">
+        <div class="breadcrumbs"><a class="breadcrumbs__item" href="/"> Главная</a>
+          <div class="breadcrumbs__delimiter"></div>
+          <div class="breadcrumbs__item">Каталог</div>
         </div>
-      </section>
+      </div>
       <section class="section-catalog oh">
         <div class="container">
-          <div class="catalog-top catalog-top--with-title">
+          <h1 class="catalog-title">Каталог</h1>
+          <h2 class="catalog-subtitle">бани</h2>
+          <div class="catalog-top catalog-top--catalog-page">
             <div class="catalog-top__left">
-              <h2 class="home-catalog-title">Каталог</h2>
+              <div class="catalog-filters">
+                <div class="catalog-filter">
+                  <div class="catalog-filter__icon"><img src="images/product-card-icon-bed.svg" alt=""></div>
+                  <div class="filter-select-wrap">
+                    <select class="js-filter-select" name="" data-placeholder="Кол-во спален">
+                      <option></option>
+                      <option value="all">Все</option>
+                      <option value="1">1 спальня</option>
+                      <option value="2">2 спальни</option>
+                      <option value="more-3">3+ спален</option>
+                    </select>
+                    <div class="filter-select-items-wrapper"></div>
+                  </div>
+                </div>
+                <div class="catalog-filter">
+                  <div class="catalog-filter__icon"><img src="images/product-card-icon-toilet.svg" alt=""></div>
+                  <div class="filter-select-wrap">
+                    <select class="js-filter-select" name="" data-placeholder="Кол-во санузлов">
+                      <option></option>
+                      <option value="all">Все</option>
+                      <option value="1">1 санузел</option>
+                      <option value="2">2 санузла</option>
+                      <option value="more-3">3+ санузлов</option>
+                    </select>
+                    <div class="filter-select-items-wrapper"></div>
+                  </div>
+                </div>
+                <div class="catalog-filter">
+                  <div class="catalog-filter__icon"><img src="images/product-card-icon-home.svg" alt=""></div>
+                  <div class="filter-select-wrap">
+                    <select class="js-filter-select" name="" data-placeholder="Терраса">
+                      <option></option>
+                      <option value="all">Все</option>
+                      <option value="1">1 терраса</option>
+                      <option value="2">2 террасы</option>
+                      <option value="more-3">3+ террас</option>
+                    </select>
+                    <div class="filter-select-items-wrapper"></div>
+                  </div>
+                </div>
+                <div class="catalog-filter">
+                  <div class="catalog-filter__icon"><img src="images/product-card-icon-steps.svg" alt=""></div>
+                  <div class="filter-select-wrap">
+                    <select class="js-filter-select" name="" data-placeholder="Этажность">
+                      <option></option>
+                      <option value="all">Все</option>
+                      <option value="1">1 этаж</option>
+                      <option value="2">2 этажа</option>
+                      <option value="more-3">3+ этажей</option>
+                    </select>
+                    <div class="filter-select-items-wrapper"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="catalog-top__right">
               <div class="catalog-sort">

@@ -1,0 +1,89 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container.container--breadcrumbs
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Главная
+			.breadcrumbs__delimiter
+			.breadcrumbs__item Доставка и монтаж
+
+	section.text-page
+		.container
+			h1.text-page-title Доставка и монтаж
+			.delivery-page-text.delivery-page-text--uppercase
+				p <span style="color: #FAB91E; font-weight: 700;">Все проекты делятся на несколько модулей, каждый из которых уже имеет полную отделку, окна, инженерию, вплоть до полной комплектации санузла.</span>
+				p Таким образом достигается стадия готовности дома на заводе 95%. Модули готовыми выезжают из производства, грузятся на бортовые авто или тралы и доставляются на участок. На участке краном выгружаются на заранее подготовленном фундаменте и соединяются с фундаментов и между собой.
+				p <span style="color: #FAB91E; font-weight: 700;">Благодаря полной заводской готовности дома - исключается строительный процесс на участке</span>
+
+			.delivery-page-video
+				.video
+					//data-type="mp4" или data-type="youtube"
+					//youtube ссылка только в формате https://www.youtube.com/embed/LXb3EKWsInQ
+					.video__inner(data-type="youtube", data-src="https://www.youtube.com/embed/LXb3EKWsInQ")
+					.video__preview
+						img(src="images/proj-slider-pic.jpg", alt="")
+					.video__play-btn.js-video-play-btn
+
+			.delivery-page-text.delivery-page-text--smalltext.delivery-page-text--uppercase
+				h2 Доставка
+				p Доставка, как и монтаж осуществляются в любое время года на разные участки в 4 региона. Для оценки подъездных путей до заказа дома клиента связываем с нашей монтажной группой, которые выезжают на осмотр или уточняют по фото и видео условий к участку и на нем.
+
+			ul.icons-items-list
+				li.icons-items-list__item.icons-items-list__item--align-center
+					.icons-items-list__icon
+						img(src="images/icons/rouble.svg", alt="")
+					.icons-items-list__text В стоимость доставки входит упаковка моделей, погрузка, негабаритная доставка. <br> На месте подбирается только крановая техника, преимущественно для участия на один день.
+
+				li.icons-items-list__item.icons-items-list__item--align-center
+					.icons-items-list__icon
+						img(src="images/icons/calendar.svg", alt="")
+					.icons-items-list__text Срок доставки в зависимости от региона <span style="color: #FAB91E; font-weight: 700;">1-3 дня</a> (после приема изделия на производстве). <br> Оплата за доставку производится в крайний срок за день до ее осуществления.
+
+				li.icons-items-list__item.icons-items-list__item--align-center
+					.icons-items-list__icon
+						img(src="images/icons/home.svg", alt="")
+					.icons-items-list__text Карта регионов доставки домов Юнит (из каталога можно взять, а может будут свои идеи по дизайну).
+
+			.delivery-page-text.delivery-page-text--smalltext.delivery-page-text--uppercase
+				h2 Монтаж
+				p Штатная монтажная бригада выезжает на участок, сопровождая доставку моделей и осуществляет все работы по выгрузке. На участке происходит процесс стыковки модулей между собой по отделке, утеплению и инженерии; монтируется сантехника, освещение, оборудование, водосточная система и другие детали, упакованные для доставки. После монтажа, при наличии внешних сетей - в любое время года дом сдается полностью готовым к новоселью.
+				h3 ЭКОНОМИЯ И УДОБСТВО
+				ul
+					li Нет долгого строительного процесса на участке с присутствием на нем сотрудников
+					li Нет необходимости осуществлять строительный контроль
+					li Нет необходимости нанимать разные компании и бригады и стыковать их на участке
+					li Нет затрат на доставку и хранение строительного материала
+					li Нет затрат на охрану на участке
+					li Нет мусора и затрат по его вывозу
+					li Нет зависимости от погодных условий
+					li Нет сезонности
+
+			ul.icons-items-list
+				li.icons-items-list__item
+					.icons-items-list__icon
+						img(src="images/icons/rouble.svg", alt="")
+					.icons-items-list__text В стоимость входят все расходы на доставку специалистов, проживание, оснащенность необходимым оборудованием, материалами, инструментами. <br> Оплата за монтаж производится после подписания акта по его работам.
+
+				li.icons-items-list__item
+					.icons-items-list__icon
+						img(src="images/icons/calendar.svg", alt="")
+					.icons-items-list__text Срок монтажа в зависимости от модели проекта занимает от <span style="color: #FAB91E; font-weight: 700;">2 до 15 дней</span>. После чего приглашается заказчик на участок для приема готового к эксплуатации изделия, где можно проверить работу всего оборудования, эстетику отделки стыковки, как топится камин или банная печь, как работает сантехника и освещение.  <br> Также в паспорте изделия указаны эксплуатационные руководства
+
+
+
+			section.video-review
+				h2.project-page-h2 Видео обзор Монтажа
+				.video
+					//data-type="mp4" или data-type="youtube"
+					//youtube ссылка только в формате https://www.youtube.com/embed/LXb3EKWsInQ
+					.video__inner(data-type="youtube", data-src="https://www.youtube.com/embed/LXb3EKWsInQ")
+					.video__preview
+						img(src="images/proj-slider-pic.jpg", alt="")
+					.video__play-btn.js-video-play-btn

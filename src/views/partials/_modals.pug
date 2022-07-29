@@ -1,0 +1,304 @@
+div(style="display:none;")
+	.modal#modal-submit-application
+		.modal-close(data-fancybox-close)
+			svg(width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+				path(d='M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z' fill='#FAFAFA')
+		.modal__container
+
+			.modal__inner
+				.modal__title Оставить заявку
+				.modal-tabs-controls(data-target="#modal-tabs-1")
+					.modal-tabs-controls__item.modal-tabs-controls__item--active.js-modal-tabs-control Консультация
+					.modal-tabs-controls__item.js-modal-tabs-control Экскурсия
+					.modal-tabs-controls__item.js-modal-tabs-control Осмотр участка
+				.modal-tabs#modal-tabs-1
+					.modal-tab.modal-tab--active
+						form.modal-form(action="")
+							.modal-yellow-info г. Хабаровск, ул.Пушкина 15
+							.inp-wrap
+								input.inp(type="text", name="", placeholder="ФИО")
+							.inp-wrap
+								input.inp.js-phone-mask-lazy(type="phone", name="", placeholder="Номер телефона")
+							.inp-wrap
+								.radio-inp-label Как с Вами связаться?
+								.radios-wrap
+									label.radio
+										input.inp(type="radio", checked, name="contact-mode")
+										.radio__pseudo
+										.radio__name Написать в Wat’s App
+									label.radio
+										input.inp(type="radio", name="contact-mode")
+										.radio__pseudo
+										.radio__name Перезвонить
+							.inp-wrap.inp-wrap--lastest-with-btn
+								button.btn(type="submit") Отправить заявку
+
+					.modal-tab
+						form.modal-form.modal-form--mih-316(action="")
+							.inp-wrap
+								input.inp(type="text", name="", placeholder="ФИО")
+							.inp-wrap
+								input.inp.js-phone-mask-lazy(type="phone", name="", placeholder="Номер телефона")
+							.inp-wrap
+								input.inp.js-flatpickr(type="text", name="", placeholder="Выбрать дату")
+							.inp-wrap.inp-wrap--lastest-with-btn
+								button.btn(type="submit") Отправить заявку
+
+					.modal-tab
+						form.modal-form(action="")
+							.inp-wrap
+								input.inp(type="text", name="", placeholder="ФИО")
+							.inp-wrap
+								input.inp.js-phone-mask-lazy(type="phone", name="", placeholder="Номер телефона")
+							.inp-wrap
+								input.inp(type="text", name="", placeholder="Адрес")
+							.inp-wrap
+								input.inp(type="text", name="", placeholder="Комментарий")
+							.inp-wrap
+								input.inp.js-flatpickr(type="text", name="", placeholder="Выбрать дату")
+							.inp-wrap.inp-wrap--lastest-with-btn
+								button.btn(type="submit") Отправить заявку
+
+	.modal.modal--long#info-what-enter
+		.modal-close.modal-close--long-modal(data-fancybox-close)
+			svg(width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+				path(d='M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z' fill='#FAFAFA')
+		.modal__container
+			.modal__inner
+				.modal__title.modal__title--bold <span style="color: #FAB91E;">В стоимость</span> не входит
+				.accordion-text
+					ul
+						li Коробка дома из обработанной древесины с двухконтурным утеплением Knauf
+						li Пароизолиции и мембраны всех перекрытий и стен, вентилируемый зазор в стенах
+					p Внешняя отделка:
+					ul
+						li Кровля металлочерепица с полимерным покрытием (цвет на выбор). Дно зашито металлом.
+						li Водосточная система Docke Премиум
+						li Окна КВЕ пятикамерный профиль, стеклопакет со шпросами, с фурнитурой и москитными сетками
+						li Дверь входная металлическая с терморазрывом (для коттеджей) с тройным уплотнителем и двойным антивандальным замком.
+						li Фасад имитация бруса сосна с пропиткой Dufa (колеровка на выбор) на 2 слоя. Покраска проемов и периметра кровли террасы акриловой краской (цвет на выбор)
+						li Терраса крытая с подшивкой, основание террасная доска с обработкой террасным маслом.
+
+
+
+	.modal#modal-calc
+		.modal-close(data-fancybox-close)
+			svg(width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+				path(d='M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z' fill='#FAFAFA')
+		.modal__container
+
+			.modal__inner
+				.modal__title Расчёт по проекту
+
+				form.modal-form(action="")
+					.inp-wrap
+						input.inp(type="text", name="", placeholder="Номер проекта")
+					.inp-wrap
+						.inp-label Цена по каталогу
+						input.inp(type="text", name="", placeholder="Цена по каталогу")
+
+					.inp-wrap
+						.radio-inp-label.radio-inp-label--big ДОПОЛНИТЕЛЬНО
+						.modal-flex
+							.modal-flex__item.modal-flex__item--desktop-gutter-70
+								.modal-flex.modal-flex--save-mobile
+									.modal-flex__item
+										label.checkbox
+											input(type="checkbox", checked, name="terrasa")
+											.checkbox__pseudo
+											.checkbox__name Терраса
+
+									.modal-flex__item
+										.modal-price Цена, Р
+
+							.modal-flex__item.modal-flex__item--desktop-gutter-70
+								.modal-flex.modal-flex--save-mobile
+									.modal-flex__item
+										label.checkbox
+											input(type="checkbox", name="kamin")
+											.checkbox__pseudo
+											.checkbox__name Камин
+
+									.modal-flex__item
+
+										.modal-price Цена, Р
+
+
+					.inp-wrap
+						.inp-label Выбрать город
+						.filter-select-wrap.filter-select-wrap--simple-select
+							select.js-filter-select(name="" data-placeholder="Выберите ближайший город")
+								option
+								option(value="all") МСК
+								option(value="1") СПБ
+								option(value="2") РНД
+								option(value="more-3") НН
+							.filter-select-items-wrapper
+
+					.inp-wrap
+						.inp-label Доставка и монтаж
+						input.inp(type="text", name="", disabled,  placeholder="Цена по каталогу")
+
+					.inp-wrap
+						input.inp(type="text", name="", placeholder="Итого")
+
+					.modal-help.js-open-modal-lvl-2-plus(data-src="#info-what-enter") Что входит?
+
+					.modal-flex
+						.modal-flex__item
+							.inp-label Стоимость земельного участка
+
+						.modal-flex__item
+							input.inp(type="text", name="", placeholder="Введите примерную цену")
+
+					.modal-flex.modal-flex--mt-22.modal-flex--align-end
+						.modal-flex__item
+							label.checkbox
+								input(type="checkbox", name="")
+								.checkbox__pseudo
+								.checkbox__name Скважина
+
+							.inp-label.inp-label--after Ориентировочная стоимость скважины
+
+						.modal-flex__item
+							.modal-flex
+								.modal-flex__item
+									textarea.textarea-like-inp(name="", cols="30", rows="10", placeholder="Введите глубину, м")
+
+								.modal-flex__item
+									input.inp(type="text", name="", disabled,  placeholder="Цена")
+
+					.modal-flex.modal-flex--mt-22.modal-flex--align-end
+						.modal-flex__item
+							label.checkbox
+								input(type="checkbox", name="")
+								.checkbox__pseudo
+								.checkbox__name Канализация
+
+							.inp-label.inp-label--after Ориентировочная стоимость канализации
+
+						.modal-flex__item
+							input.inp(type="text", name="",disabled,  placeholder="Цена")
+
+					.inp-wrap
+						.filter-select-wrap.filter-select-wrap--simple-select
+							select.js-filter-select(name="" data-placeholder="Топас 6пр")
+								option
+								option(value="all") Топас 7пр
+								option(value="1") Топас 8пр
+								option(value="2") Топас 9пр
+								option(value="more-3") Топас 10пр
+							.filter-select-items-wrapper
+
+					.modal-flex.modal-flex--mt-22.modal-flex--align-end
+						.modal-flex__item
+							label.checkbox
+								input(type="checkbox", name="")
+								.checkbox__pseudo
+								.checkbox__name Фундамент
+
+							.inp-label.inp-label--after Стоимость фундамента
+
+						.modal-flex__item
+							input.inp(type="text", name="", disabled, placeholder="Цена")
+
+					.modal-flex.modal-flex--mt-22.modal-flex--align-end
+						.modal-flex__item
+							label.checkbox
+								input(type="checkbox", name="")
+								.checkbox__pseudo
+								.checkbox__name Забор
+
+							.inp-label.inp-label--after Ориентировочная стоимость забора
+
+						.modal-flex__item
+							.modal-flex
+								.modal-flex__item
+									textarea.textarea-like-inp(name="", cols="30", rows="10", placeholder="Введите периметр, м")
+
+								.modal-flex__item
+									input.inp(type="text", name="", disabled,  placeholder="Цена")
+
+					.inp-wrap
+						input.inp(type="text", name="", placeholder="ИТОГО ЗАТРАТЫ")
+
+
+					.inp-wrap.inp-wrap--lastest-with-btn.js-open-modal(data-src="#modal-select-send-mode")
+						.btn Сохранить
+
+					.inp-wrap.inp-wrap--lastest-with-btn.js-open-modal(data-src="#modal-select-send-mode")
+						.btn.btn--full-orange Расчитать ипотеку
+
+
+
+	.modal.modal--small#modal-select-send-mode
+		.modal-close(data-fancybox-close)
+			svg(width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+				path(d='M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z' fill='#FAFAFA')
+		.modal__container
+
+			.modal__inner
+				.modal__title Расчёт по проекту
+				.modal-form.modal-form--mt-15
+					.inp-wrap
+						.inp-label Выберите куда вам удобнее отправить
+						.modal-flex.modal-flex--mt-12
+							.modal-flex__item
+								.btn.js-open-modal( data-src="#modal-send-mode-phone") WHATSAPP
+							.modal-flex__item
+								.btn.js-open-modal( data-src="#modal-send-mode-email") EMAIL
+
+	.modal.modal--small#modal-send-mode-phone
+		.modal-close(data-fancybox-close)
+			svg(width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+				path(d='M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z' fill='#FAFAFA')
+		.modal__container
+			.modal__inner
+				.modal__title Расчёт по проекту
+				.modal-form.modal-form--mt-15
+					.inp-wrap
+						.inp-label Введите номер телефона
+					.inp-wrap
+						input.inp.js-phone-mask(type="phone", name="",  placeholder="+7(___)___-__-__")
+
+					.inp-wrap.inp-wrap--lastest-with-btn
+						.btn Отправить
+
+	.modal.modal--small#modal-send-mode-email
+		.modal-close(data-fancybox-close)
+			svg(width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+				path(d='M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z' fill='#FAFAFA')
+		.modal__container
+			.modal__inner
+				.modal__title Расчёт по проекту
+				.modal-form.modal-form--mt-15
+					.inp-wrap
+						.inp-label Введите email
+					.inp-wrap
+						input.inp(type="email", name="",  placeholder="Email@gmail.com")
+
+
+					.inp-wrap.inp-wrap--lastest-with-btn
+						.btn Отправить
+
+
+	.modal.modal--small#modal-save-variant
+		.modal-close(data-fancybox-close)
+			svg(width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+				path(d='M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z' fill='#FAFAFA')
+		.modal__container
+			.modal__inner
+				.modal__title Сохранить вариант
+				.modal-form.modal-form--mt-15
+					.inp-wrap
+						input.inp(type="email", name="",  placeholder="Введите почту *")
+					.inp-wrap
+						input.inp(type="text", name="",  placeholder="Введите имя")
+					.inp-wrap
+						input.inp(type="text", name="",  placeholder="Номер проекта")
+					.inp-wrap
+						input.inp.js-phone-mask-lazy(type="phone", name="",  placeholder="Введите  номер телефона")
+
+
+					.inp-wrap.inp-wrap--lastest-with-btn
+						.btn Сохранить

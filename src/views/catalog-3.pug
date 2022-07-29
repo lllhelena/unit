@@ -1,0 +1,141 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container.container--breadcrumbs
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Главная
+			.breadcrumbs__delimiter
+			.breadcrumbs__item Каталог
+
+
+	section.section-catalog.oh
+		.container
+			h1.catalog-title Каталог
+			h2.catalog-subtitle бани
+			.catalog-top.catalog-top--catalog-page
+				.catalog-top__left
+					.catalog-filters
+						.catalog-filter
+							.catalog-filter__icon
+								img(src="images/product-card-icon-bed.svg", alt="")
+							.filter-select-wrap
+								select.js-filter-select(name="" data-placeholder="Кол-во спален")
+									option
+									option(value="all") Все
+									option(value="1") 1 спальня
+									option(value="2") 2 спальни
+									option(value="more-3") 3+ спален
+								.filter-select-items-wrapper
+						.catalog-filter
+							.catalog-filter__icon
+								img(src="images/product-card-icon-toilet.svg", alt="")
+							.filter-select-wrap
+								select.js-filter-select(name="" data-placeholder="Кол-во санузлов")
+									option
+									option(value="all") Все
+									option(value="1") 1 санузел
+									option(value="2") 2 санузла
+									option(value="more-3") 3+ санузлов
+								.filter-select-items-wrapper
+						.catalog-filter
+							.catalog-filter__icon
+								img(src="images/product-card-icon-home.svg", alt="")
+							.filter-select-wrap
+								select.js-filter-select(name="" data-placeholder="Терраса")
+									option
+									option(value="all") Все
+									option(value="1") 1 терраса
+									option(value="2") 2 террасы
+									option(value="more-3") 3+ террас
+								.filter-select-items-wrapper
+						.catalog-filter
+							.catalog-filter__icon
+								img(src="images/product-card-icon-steps.svg", alt="")
+							.filter-select-wrap
+								select.js-filter-select(name="" data-placeholder="Этажность")
+									option
+									option(value="all") Все
+									option(value="1") 1 этаж
+									option(value="2") 2 этажа
+									option(value="more-3") 3+ этажей
+								.filter-select-items-wrapper
+
+				.catalog-top__right
+					.catalog-sort
+						.catalog-sort__control.js-sort-control
+							//'unset' || 'asc' || 'desc'
+							.catalog-sort__direction.js-catalog-sort__direction(data-status="unset" data-index="-1")
+							.catalog-sort__name.js-catalog-sort__name Фильтр
+							.catalog-sort__icon
+								include ../images/filter-icon.svg
+
+						.catalog-sort__content
+							.catalog-sort__title Сортировать по
+							.sort-item.js-sort-item
+								input.sort-item__inp-type(type="radio" name="sort-type" value="price")
+								input.sort-item__inp-direction(type="checkbox" name="sort-asc-price" checked)
+								.sort-item__direction
+								.sort-item__name Цена
+							.sort-item.js-sort-item
+								input.sort-item__inp-type(type="radio" name="sort-type" value="area")
+								input.sort-item__inp-direction(type="checkbox" name="sort-asc-area" checked)
+								.sort-item__direction
+								.sort-item__name Площадь
+							.sort-item.js-sort-item
+								input.sort-item__inp-type(type="radio" name="sort-type" value="number")
+								input.sort-item__inp-direction(type="checkbox" name="sort-asc-number" checked)
+								.sort-item__direction
+								.sort-item__name Номер
+							.sort-item.js-sort-item
+								input.sort-item__inp-type(type="radio" name="sort-type" value="popular")
+								input.sort-item__inp-direction(type="checkbox" name="sort-asc-popular" checked)
+								.sort-item__direction
+								.sort-item__name Популярное
+
+
+
+
+
+			.catalog-cards
+				each val in [1, 2, 3, 4, 5, 6]
+					a.catalog-card(href="")
+						.catalog-card__pic
+							img(src="images/card_bg.jpg", alt="")
+						.catalog-card__inner
+							.catalog-card__name Название дома
+							.catalog-card__price 1.018.600₽
+							.catalog-card__feature Площадь 32 - 97 м²
+							.catalog-card-attributes
+								.catalog-card-attributes__col
+									.catalog-card-attribute
+										.catalog-card-attribute__icon
+											img(src="images/product-card-icon-bed.svg", alt="")
+										.catalog-card-attribute__name 2
+									.catalog-card-attribute
+										.catalog-card-attribute__icon
+											img(src="images/product-card-icon-toilet.svg", alt="")
+										.catalog-card-attribute__name 1
+								.catalog-card-attributes__col
+									.catalog-card-attribute
+										.catalog-card-attribute__icon
+											img(src="images/product-card-icon-home.svg", alt="")
+										.catalog-card-attribute__name Крытая
+									.catalog-card-attribute
+										.catalog-card-attribute__icon
+											img(src="images/product-card-icon-steps.svg", alt="")
+										.catalog-card-attribute__name 1
+
+							.catalog-card__fg
+
+							.catalog-card__text-feature Этажей 2
+							.catalog-card__text-feature Спален 1
+
+							.catalog-card__btns
+								.btn.btn--orange Подробнее

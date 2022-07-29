@@ -1,0 +1,27 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+block main
+	.container.container--breadcrumbs
+		.breadcrumbs
+			a.breadcrumbs__item(href="/")  Главная
+			.breadcrumbs__delimiter
+			.breadcrumbs__item Контакты
+	section.section-contacts
+		.container
+			h1.contacts-page-title Контакты
+		.fullpage-map
+			|  <a class="dg-widget-link" href="http://2gis.ru/khabarovsk/firm/70000001022321666/center/135.0767540931702,48.477444899845466/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Хабаровска</a><div class="dg-widget-link"><a href="http://2gis.ru/khabarovsk/firm/70000001022321666/photos/70000001022321666/center/135.0767540931702,48.477444899845466/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/khabarovsk/center/135.076752,48.477176/zoom/16/routeTab/rsType/bus/to/135.076752,48.477176╎СтройДом?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до СтройДом</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":'100%',"height":600,"borderColor":"#a3a3a3","pos":{"lat":48.477444899845466,"lon":135.0767540931702,"zoom":16},"opt":{"city":"khabarovsk"},"org":[{"id":"70000001022321666"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+
+		.container
+			.contacts-bottom
+				.contacts-bottom-item <b>Адрес:</b> г.Хабаровск, ул.Пушкина 15
+				.contacts-bottom-item <b>Телефон:</b> <a href="tel:+74212775585">+ 7 (4212) 77-55-85</a>
+				.contacts-bottom-item <b>Email:</b> <a href="mailto:stroydom.khv@gmail.com">stroydom.khv@gmail.com</a>
+
